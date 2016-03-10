@@ -1,0 +1,17 @@
+/Build/
+/Library/
+/Temp/
+
+/Assembly-CSharp-Editor-vs.csproj
+/Assembly-CSharp-Editor.csproj
+/Assembly-CSharp-firstpass-vs.csproj
+/Assembly-CSharp-firstpass.csproj
+/Assembly-CSharp-vs.csproj
+/Assembly-CSharp.csproj
+/tlb-jam-csharp.sln
+/tlb-jam.sln
+/tlb-jam.userprefs
+
+/.idea/workspace.xml
+/.idea/tasks.xml
+
