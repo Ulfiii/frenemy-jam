@@ -4,7 +4,7 @@ using System.Collections;
 public class BackgroundController : MonoBehaviour {
 
 	public GameObject background;
-	public int backgroundHeight;
+	public float backgroundHeight;
 	public float speed;
 
 	private float movedAmount = 0;
@@ -20,10 +20,8 @@ public class BackgroundController : MonoBehaviour {
 		topTile.transform.SetParent (background.transform);
 		topTile.transform.rotation = new Quaternion ();
 		topTile.transform.position = new Vector3 (bottomTile.transform.position.x, bottomTile.transform.position.y, bottomTile.transform.position.z);
-		topTile.transform.Translate (new Vector3 (0, 0, backgroundHeight));
-
-		//GameObject.Destroy (origTile);
-	
+	//	topTile.transform.Translate (new Vector3 (0, 0, backgroundHeight));
+		topTile.transform.Translate (new Vector3 (0, backgroundHeight));
 	}
 
 	// Update is called once per frame
@@ -33,7 +31,7 @@ public class BackgroundController : MonoBehaviour {
 
 		if (movedAmount >= backgroundHeight) {
 
-			bottomTile.transform.Translate (new Vector3 (0, 0, backgroundHeight * 2));
+			bottomTile.transform.Translate (new Vector3 (0, backgroundHeight * 2, 0));
 
 			GameObject tmp = topTile;
 			topTile = bottomTile;
@@ -43,7 +41,7 @@ public class BackgroundController : MonoBehaviour {
 		}
 
 		foreach (Transform child in background.transform) {
-			child.Translate (new Vector3 (0, 0, -speed));
+			child.Translate (new Vector3 (0, -speed, 0));
 		}
 	}
 }
