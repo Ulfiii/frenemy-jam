@@ -1294,7 +1294,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -134621135
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ffed234a7a2725f4392b6e8a5af93a73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7765c79f627914246b21c3b92497de85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1402,13 +1402,30 @@ Prefab:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 19886384, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
-      propertyPath: CollisionModule.interiorCollisions
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c802f71136eeb514285877552e2b70e8,
+        type: 3}
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 19886384, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
-      propertyPath: CollisionModule.collidesWithDynamic
-      value: 0
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21237502, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
