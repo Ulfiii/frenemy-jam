@@ -733,7 +733,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400354, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 136010, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
       propertyPath: m_Name
@@ -893,7 +893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410764, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 129928, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_Name
@@ -1135,7 +1135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1257982182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1396,11 +1396,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400354, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 136010, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19886384, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: CollisionModule.interiorCollisions
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19886384, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
+      propertyPath: CollisionModule.collidesWithDynamic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 481dd98bc3c5049a0b538138d85cffd0, type: 2}
@@ -1414,11 +1422,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 410764, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.0507207
+      value: -1.95
       objectReference: {fileID: 0}
     - target: {fileID: 410764, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.464527
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 410764, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1442,11 +1450,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410764, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 129928, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
       propertyPath: m_Name
       value: Detector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401378, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
+      propertyPath: minSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401378, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}
+      propertyPath: maxSpeed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86ff981049d44b0dbb9df0f26c79952, type: 2}

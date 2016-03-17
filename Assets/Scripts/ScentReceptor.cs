@@ -14,8 +14,17 @@ public class ScentReceptor : MonoBehaviour {
 	}
 
 
-  void OnParticleCollision(GameObject gameObject)
-  {
-      Debug.Log("collision: " + gameObject.name);
-  }
+  	void OnParticleCollision(GameObject gameObject)
+ 	{
+      	Debug.Log("collision: " + gameObject.name);
+
+		ParticleSystem part = gameObject.GetComponent<ParticleSystem> ();
+
+		ParticleCollisionEvent[] events = new ParticleCollisionEvent[part.GetSafeCollisionEventSize()];
+		int eventCount = part.GetCollisionEvents(this.gameObject, events);
+
+		Debug.Log("event count: " + eventCount);
+			
+
+ 	}
 }
